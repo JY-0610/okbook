@@ -1,0 +1,549 @@
+
+#wrapper {
+    position: relative;
+    min-width: 375px;
+    height: 100%;
+
+}
+
+#skip-nav {
+    position: fixed;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 16px;
+    transition: top 0.3s;
+    z-index: 100000;
+}
+
+
+/* common */
+#skip-nav:focus {
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 14%;
+    top: 4px;
+}
+
+.logo img {
+    width: 120px;
+    height: 60px;
+}
+
+
+div.content-box {
+    position: relative;
+    max-width: 375px;
+    height: 100%;
+    margin: 0 auto;
+
+
+}
+
+
+
+/* tab-bar */
+
+
+ul.tab-bar-list {
+    width: 100%;
+    height: 70px;
+    max-width: 375px;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #c5c5c5;
+    z-index: 9999;
+}
+
+ul.tab-bar-list>li {
+    float: left;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 32px;
+
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    font-size: 32px;
+    padding: 10px;
+}
+
+ul.gnb {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+ul.gnb>li {
+    padding-left: 4px;
+}
+
+.main-visual {
+    position: relative;
+    width: 100%;
+}
+
+.main-visual ul.main-banner {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+.main-visual ul.main-banner>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-visual ul.main-banner>li:first-child {
+    display: block;
+}
+
+.main-visual ul.indicator {
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 180px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.325);
+    border-radius: 20px;
+}
+
+.main-visual ul.indicator>li {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+section.concert {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+}
+
+ul.concert-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 70%;
+
+}
+
+ul.concert-list>li {
+    float: left;
+    padding-left: 12px;
+    width:  170px;
+}
+
+ul.concert-list>li img {
+    width: 364px;
+}
+
+ul.concert-list>li h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1178D4;
+}
+
+ul.concert-list>li span {
+    font-size: 12px;
+    color: #9c9999;
+}
+
+ul.concert-list>li p {
+    white-space: wrap;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+section.recommendation {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;
+
+
+}
+
+.bg {
+    position: absolute;
+    width: 370px;
+    height: 700px;
+    left: 0;
+    top: 24%;
+    border-radius: 138px 138px 0px 0px;
+    background-color: #FDFFE1;
+    z-index: -888;
+}
+
+
+.recommendation ul.book {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+}
+
+.recommendation ul.book li {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    max-width: 280px;
+    padding: 32px;
+    display: none;
+    transform: translate(0, 20%);
+
+}
+
+.recommendation ul.book li:first-child {
+    display: block;
+}
+
+.recommendation ul.book>li p {
+    font-size: 12px;
+}
+
+.new-book {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #EAF4F6;
+}
+
+.new-book ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.new-book ul li {
+    position: absolute;
+    width: 370px;
+    height: 158px;
+    padding-top: 40px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+}
+
+section.new-book ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.new-book ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
+
+section.new-book ul li div.text {
+    float: right;
+    width: 45%;
+    transform: translate(0%, -30px);
+    background-color: #ffffff;
+}
+
+section.new-book ul li div.text h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+section.new-book ul li div.text>span {
+    font-size: 12px;
+    color: #9c9999;
+    line-height: 1.5;
+}
+
+section.new-book ul li .price {
+    font-size: 14px;
+    padding: 5px;
+}
+
+section.new-book ul li .price em {
+    font-weight: 700;
+    color: #1178D4;
+}
+
+section.new-book ul li .price span {
+    font-size: 16px;
+    color: #9c9999;
+}
+
+
+section.best-seller {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+
+
+}
+
+section.best-seller h2 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.tab-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+
+}
+
+.tab-menu>li {
+    float: left;
+   padding-right: 4px;
+}
+
+.tab-menu>li>a.tab {
+    display: inline-block;
+    width: 84px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #D9D9D9;
+    border-radius: 34px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.tab-menu li ul.best-book {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    padding-top: 10px;
+    transform: translate(-50%, 0);
+    background-color: #ffffff;
+}
+
+.tab-menu li > ul.best-book > li {
+    float: left;
+    width: 42%;
+    height: 70%;
+    margin-left: 16px;
+}
+
+
+
+.tab-menu li ul.best-book>li img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+
+}
+
+ul.best-book div.desc {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 4px;
+
+}
+
+
+.best-book .price {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.best-book .price h3 {
+    font-size: 18px;
+}
+
+.best-book div.desc p {
+    color: #9c9999;
+    font-size: 12px;
+}
+
+.best-book div.desc em {
+    font-weight: 700;
+    color: #1178D4;
+}
+
+section.deal {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    transform: translateY(40%);
+    background-color: #FFECCD;
+
+}
+
+section.deal h2 {
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+}
+
+.deal-list {
+    position: absolute;
+    transform: translate(8%, 4%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.deal-list > li {
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+}
+
+.deal-list li a {
+    width: 100%;
+    height: 100%;
+}
+
+.deal-list li img {
+    float: right;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.cont-txt {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.cont-txt span {
+    font-size: 12px;
+    color: #9C9999;
+
+}
+
+.cont-txt p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cont-txt .price {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.cont-txt .price em {
+    font-weight: 700;
+    color: #1178D4;
+}
+
+
+section.best-audio {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    transform: translateY(50%);
+}
+
+section.best-audio h2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+}
+
+section.best-audio ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section.best-audio ul>li {
+    float: left;
+    width: 45%;
+    height: auto;
+    padding-right: 15px;
+}
+
+
+section.best-audio ul li img {
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+section.best-audio ul li p {
+    font-size: 12px;
+    color: #9C9999;
+    padding-top: 5px;
+}
+
+section.best-audio ul li h3 {
+    font-size: 14px;
+    color: #333333;
+
+}
+
+section.best-audio ul li span {
+    font-size: 12px;
+    padding: 5px;
+    color: #9c9999;
+}
+
+section.best-audio .price {
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+section.best-audio .price em {
+    font-weight: 700;
+    color: #1178D4;
+}
+
+section.best-audio .rank {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #888;
+    z-index: 99;
+}
+
+section.best-audio li:nth-child(1) .rank {
+    background-color: #FF5B5B;
+
+}
