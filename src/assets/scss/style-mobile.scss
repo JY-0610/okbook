@@ -1,3 +1,18 @@
+/*reset*/
+.pc {display: none !important;}
+br.only-pc {content: '';}
+br.only-pc::after {content: '\00a0';}
+
+
+body {
+    font-family: 'NotoSansKR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    height: 100%;
+    background: #ffffff;
+    overflow-x: hidden;
+}
 
 #wrapper {
     position: relative;
@@ -29,7 +44,7 @@
 .logo {
     position: absolute;
     left: 14%;
-    top: 4px;
+    top: 8px;
 }
 
 .logo img {
@@ -55,7 +70,6 @@ div.content-box {
 ul.tab-bar-list {
     width: 100%;
     height: 70px;
-    max-width: 375px;
     position: fixed;
     bottom: 0;
     background-color: #ffffff;
@@ -79,23 +93,109 @@ ul.tab-bar-list>li {
 .menu {
     position: absolute;
     top: 10px;
-    font-size: 32px;
+    font-size: 28px;
     padding: 10px;
 }
 
 ul.gnb {
     position: absolute;
-    right: 0;
+    right: 28px;
     top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 ul.gnb>li {
     padding-left: 4px;
 }
+
+
+/*SUB_MENU*/
+.sub {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 9999999;
+    display: none;
+    transition: all 0.3s;
+
+}
+
+.sub .logo {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 50%;
+}
+
+.sub .sub_gnb {
+    position: absolute;
+    right: 4%;
+    top: 40px;
+    font-size: 24px;
+}
+
+.sub .sub_gnb li {
+    float: left;
+    margin-right: 10px;
+
+}
+
+a.login_2 {
+    position: absolute;
+    width: 80%;
+    top: 14%;
+    left: 4%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #c8e4fd;
+}
+
+ul.sub_menu_1 {
+    position: absolute;
+    width: 100%;
+    top: 24%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+ul.sub_menu_1 li {
+    float: left;
+    margin-right: 28px;
+}
+
+ul.sub_menu_1 li span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+ul.sub_menu_2 {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+ul.sub_menu_2 li {
+    padding: 20px 10px;
+    border-bottom: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+ul.sub_menu_2 li::after {
+    content: '>';
+    position: absolute;
+    right: 16px;
+}
+
 
 .main-visual {
     position: relative;
@@ -107,42 +207,99 @@ ul.gnb>li {
     height: 100%;
     left: 0;
     top: 0;
-
 }
 
 .main-visual ul.main-banner>li {
     position: absolute;
+    display: none;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+
 }
 
 .main-visual ul.main-banner>li:first-child {
     display: block;
 }
 
-.main-visual ul.indicator {
-    width: 50px;
+section.main-visual .control {
     position: absolute;
-    right: 20px;
-    top: 180px;
-    padding: 8px;
-    background-color: rgba(0, 0, 0, 0.325);
-    border-radius: 20px;
+    right: calc(50% - 124px);
+    font-size: 20px;
+    top: 194px;
+    z-index: 99999;
 }
 
-.main-visual ul.indicator>li {
-    color: #ffffff;
-    font-size: 16px;
+section.main-visual .control a {
+    width: 100%;
+    height: 100%;
+}
+
+.control>a.play i {
+    display: none;
+}
+
+section.main-visual .control>a.play i:first-child {
+    display: block;
+}
+
+section.main-visual .control>a.play.on i:first-child {
+    display: none;
+}
+
+section.main-visual .control>a.play.on i+i {
+    display: block;
+}
+
+/*indicator*/
+ul.indicator {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 100%;
     text-align: center;
+}
+
+ul.indicator>li {
+    display: inline-block;
+}
+
+ul.indicator>li>a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #9C9999;
+    opacity: 0.6;
+    text-indent: -9999px;
+}
+
+ul.indicator>li.on>a {
+    width: 20px;
+    border-radius: 30px;
+    background-color: #000;
+    opacity: 1;
+}
+
+span.bar {
+    position: absolute;
+    left: 0;
+    top: 230px;
+    width: 0;
+    height: 4px;
+    background-color: #333333;
+}
+
+span.bar.on {
+    animation: bar-animation 2s linear 0s 1 alternate forwards;
 
 }
 
 section.concert {
     position: relative;
     width: 100%;
-    height: 500px;
+    height:  500px;
 
 }
 
@@ -150,14 +307,14 @@ ul.concert-list {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 70%;
+    top: 36%;
 
 }
 
 ul.concert-list>li {
     float: left;
     padding-left: 12px;
-    width:  170px;
+    width: 170px;
 }
 
 ul.concert-list>li img {
@@ -187,18 +344,25 @@ section.recommendation {
     width: 100%;
     height: 700px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 64px;
 
 
+}
+
+section.recommendation h2 {
+    position: absolute;
+    left: 24%;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .bg {
     position: absolute;
     width: 370px;
     height: 700px;
-    left: 0;
-    top: 24%;
-    border-radius: 138px 138px 0px 0px;
+    left: 10px;
+    top: 16%;
+    border-radius: 92px 92px 0px 0px;
     background-color: #FDFFE1;
     z-index: -888;
 }
@@ -207,17 +371,18 @@ section.recommendation {
 .recommendation ul.book {
     position: absolute;
     width: 100%;
-    top: 20%;
+    top: 16%;
 }
 
 .recommendation ul.book li {
     position: absolute;
     width: 100%;
     height: 200px;
-    max-width: 280px;
+    max-width: 238px;
     padding: 32px;
+    left: 10%;
+    top: 80px;
     display: none;
-    transform: translate(0, 20%);
 
 }
 
@@ -234,6 +399,13 @@ section.recommendation {
     width: 100%;
     height: 320px;
     background-color: #EAF4F6;
+}
+
+.new-book h2 {
+    position: absolute;
+    left: 30%;
+    top: 10px;
+    margin: 4px;
 }
 
 .new-book ul {
@@ -305,7 +477,7 @@ section.new-book ul li .price span {
 section.best-seller {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 900px;
     background-color: #ffffff;
 
 
@@ -322,12 +494,13 @@ section.best-seller h2 {
     width: 100%;
     height: 100%;
     left: 0;
+    margin: 10px;
 
 }
 
 .tab-menu>li {
     float: left;
-   padding-right: 4px;
+    padding-right: 4px;
 }
 
 .tab-menu>li>a.tab {
@@ -340,6 +513,22 @@ section.best-seller h2 {
     text-align: center;
     background-color: #ffffff;
 }
+.tab-menu>li>a.tab.open {
+    display: inline-block;
+    width: 84px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 34px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #D9D9D9;
+}
+.tab-menu>li>a.tab:hover{
+    background-color: #D9D9D9;
+    font-weight: 700;
+    color: #ffffff;
+}
 
 .tab-menu li ul.best-book {
     position: absolute;
@@ -350,12 +539,21 @@ section.best-seller h2 {
     transform: translate(-50%, 0);
     background-color: #ffffff;
 }
-
-.tab-menu li > ul.best-book > li {
+.tab-menu li>ul.best-book{
+    display: none;
+}
+.tab-menu li>ul.best-book>li {
     float: left;
     width: 42%;
     height: 70%;
     margin-left: 16px;
+    background-color: #fff;
+}
+
+
+
+.tab-menu li>ul.best-book.open {
+    display: block;
 }
 
 
@@ -417,7 +615,7 @@ section.deal h2 {
     overflow: hidden;
 }
 
-.deal-list > li {
+.deal-list>li {
     float: left;
     width: 300px;
     height: 200px;
@@ -485,13 +683,14 @@ section.best-audio ul {
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 12px;
 }
 
 section.best-audio ul>li {
     float: left;
     width: 45%;
     height: auto;
-    padding-right: 15px;
+    padding-right: 8px;
 }
 
 
@@ -546,4 +745,108 @@ section.best-audio .rank {
 section.best-audio li:nth-child(1) .rank {
     background-color: #FF5B5B;
 
+}
+
+
+/*footer*/
+#footer {
+    position: absolute;
+    bottom: -18%;
+    width: 100%;
+    height: 220px;
+    font-size: 12px;
+    color: #727070;
+    background-color: #eeeeee;
+}
+
+#footer a.logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 4px;
+    top: 8px;
+}
+
+#footer a.logo img {
+    width: 100px;
+    height: 50px;
+}
+
+ul.footer-menu {
+    position: absolute;
+    left: 24%;
+    width: 70%;
+    padding: 16px;
+}
+
+ul.footer-menu li {
+    float: left;
+    padding-left: 4px;
+}
+
+ul.footer-menu li::after {
+    content: "";
+    display: inline-block;
+    margin-left: 14px;
+    width: 1px;
+    height: 10px;
+    background-color: #939393;
+}
+
+ul.footer-menu li:last-child::after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+ul.address {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 30%;
+    padding: 4px 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+ul.address li {
+    float: left;
+    margin-left: 5px;
+}
+
+.sns {
+    position: absolute;
+    right: 8%;
+    top: 8px;
+}
+
+ul.sns-list {
+    font-size: 16px;
+}
+
+ul.sns-list li {
+    float: left;
+    margin-left: 5px;
+}
+
+.cel {
+    position: absolute;
+    right: 8%;
+    top: 40%;
+    font-size: 16px;
+}
+
+.cel em {
+    font-weight: 700;
+}
+
+
+@keyframes bar-animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
