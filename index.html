@@ -18,8 +18,8 @@
 <body class="main">
   <div id="wrapper">
     <a href="#main" id="skip-nav">본문 바로가기</a>
-    <header id="header">
-      <a href="#" class="logo">
+    <header id="header" class="pc">
+      <a href="#main" class="logo pc">
         <img src="/assets/images/ok!book-logo.png" alt="okbook">
       </a>
       <ul class="utill">
@@ -42,10 +42,54 @@
         <li><a href="#"><i class="xi-cart-o"><span>장바구니</span></i></a></li>
       </ul>
     </header>
+  <!-- mobile_header -->
+      <div class="tab-bar mobile">
+      <ul class="tab-bar-list">
+        <li><a href="#none"><i class="xi-bars"><span>메뉴</span></i></a></li>
+        <li><a href="#none"><i class="xi-search"><span>검색</span></i></a></li>
+      <li><a href="#none"><i class="xi-home-o"><span>홈</span></i></a></li>
+      <li><a href="#none"><i class="xi-user-o"><span>마이페이지</span></i></a></li>
+      <li><a href="#none"><i class="xi-clock"><span>최근본페이지</span></i></a></li>
+      <li><a href="#none"><i class="xi-share"><span>공유하기</span></i></a></li>
+
+      </ul>
+    </div>
+    <header id="header" class="mobile">
+      <a href="#main" class="logo">
+        <img src="/assets/images/ok!book-logo.png" alt="okbook">
+      </a>
+      <a href="#none" class="menu"><i class="xi-bars"><span>메뉴</span></i></a>
+      <ul class="gnb">
+        <li><a href="#none"><i class="xi-cart-o"><span>장바구니</span></i></a></li>
+        <li><a href="#none"><i class="xi-user-o"><span>마이페이지</span></i></a></li>
+      </ul>
+    <div class="sub">
+      <a href="#main" class="logo"><img src="/assets/images/ok!book-logo.png" alt="okbook"></a>
+      <ul class="sub_gnb">
+        <li><a href="#none" class="close"><i class="xi-close-min"><span>나가기</span></i></a></li>
+      </ul>
+      <a href="#none" class="login_2"><p>로그인을 해주세요</p></a></a>
+    <ul class="sub_menu_1">
+      <li><a href="#none"><img src="/assets/images/ico_delivery.png" alt="주문배송"><span>주문/배송</span></a></li>
+      <li><a href="#none"><img src="/assets/images/ico_point.png" alt="혜택/포인트"><span>혜택/포인트</span></a></li>
+      <li><a href="#none"><img src="/assets/images/ico_sale.png" alt="세일"><span>세일</span></a></li>
+      <li><a href="#none"><img src="/assets/images/ico_calender.png" alt="출석체크"><span>출석체크</span></a></li>
+    </ul>
+    <ul class="sub_menu_2">
+      <li><a href="#none">베스트</a></li>
+      <li><a href="#none">신상품</a></li>
+      <li><a href="#none">국내도서</a></li>
+      <li><a href="#none">외국도서</a></li>
+      <li><a href="#none">EBOOK</a></li>
+        <li><a href="#none">문구/Gift</a></li>
+      <li><a href="#none">티켓</a></li>
+    </ul>
+    </div>
+    </header>
     <main id="main">
-      <section class="main-visual">
+      <section class="main-visual pc">
         <div class="box">
-        <p class="dummy"><img src="/assets/images/banner-1.jpg" alt=""></p>
+        <p class="dummy"><img src="/assets/images/banner-1.jpg" alt="dummy"></p>
         <ul class="main-banner">
           <li><a href="#none"><img src="/assets/images/banner-1.jpg" alt="이달의 도서"></a></li>
           <li><a href="#none"><img src="/assets/images/banner-2.jpg" alt="2023미래과학트렌드"></a></li>
@@ -55,8 +99,29 @@
         <ul class="indicator">
         </ul>
         <p class="control">
-          <a href="#none" class="prev"><i class="xi-angle-left"><span>이전</span></i></a>
-          <a href="#none" class="next"><i class="xi-angle-right"><span>다음</span></i></a>
+          <a href="#none" class="prev pc"><i class="xi-angle-left"><span>이전</span></i></a>
+          <a href="#none" class="next pc"><i class="xi-angle-right"><span>다음</span></i></a>
+          <a href="#" class="play">
+            <i class="xi-play"><span>타이머 시작</span></i>
+            <i class="xi-pause"><span>타이머 정지</span></i>
+          </a>
+        </p>
+        <span class="bar"></span>
+      </section>
+         <section class="main-visual mobile">
+        <div class="box">
+        <p class="dummy"><img src="/assets/images/main-banner-1.jpg" alt="dummy"></p>
+        <ul class="main-banner">
+          <li><a href="#none"><img src="/assets/images/main-banner-1.jpg" alt="이달의 도서"></a></li>
+          <li><a href="#none"><img src="/assets/images/main-banner-1.jpg" alt="2023미래과학트렌드"></a></li>
+          <li><a href="#none"><img src="/assets/images/main-banner-1.jpg" alt="스페셜데이"></a></li>
+        </ul>
+        </div>
+        <ul class="indicator">
+        </ul>
+        <p class="control">
+          <a href="#none" class="prev pc"><i class="xi-angle-left"><span>이전</span></i></a>
+          <a href="#none" class="next pc"><i class="xi-angle-right"><span>다음</span></i></a>
           <a href="#" class="play">
             <i class="xi-play"><span>타이머 시작</span></i>
             <i class="xi-pause"><span>타이머 정지</span></i>
@@ -65,7 +130,7 @@
         <span class="bar"></span>
       </section>
       <section class="concert">
-        <div class="tit">
+        <div class="tit pc">
           <strong>콘서트</strong>
           <p>지친일상에 에너지를 불러일으켜 줄 피로회복제!</p>
         </div>
@@ -165,6 +230,8 @@
             </a>
           </li>
         </ul>
+        <div class="bg"
+        ></div>
       </section>
       <section class="new-book">
         <h2>도서 종합 <em>신간</em></h2>
@@ -190,7 +257,7 @@
         <ul class="indicator"></ul>
 
       </section>
-      <div class="banner">
+      <div class="banner pc">
         <p>책 한권을 구매 해도 365일 무료배송!</p>
       </div>
       <section class="best-seller">
@@ -529,8 +596,9 @@
         </ul>
       </section>
       <section class="deal">
+        <h3 class="">문구/Gift</h3>
         <div class="content-box">
-          <div class="tit">
+          <div class="tit pc">
             <span class="tag">문구/Gift</span>
             <h2>HAPPY Chrithmas</h2>
           </div>
