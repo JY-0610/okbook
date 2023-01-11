@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>okbook</title>
+  <!-- cdn -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <script src="http://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" media="screen and (min-width: 1024.0px)" href="./assets/css/style-pc.css">
+    <link rel="stylesheet" media="screen and (max-width: 1023.9px)" href="./assets/css/style-mobile.css">
+</head>
+
+<body class="main">
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+    <header id="header" class="pc">
+      <a href="#main" class="logo pc">
+        <img src="/assets/images/ok!book-logo.png" alt="okbook">
+      </a>
+      <ul class="utill">
+        <li><a href="/assets/page/login.html">로그인</a></li>
+        <li><a href="./assets/page/join.html">회원가입</a></li>
+        <li><a href="#none">고객센터</a></li>
+      </ul>
+
+      <ul class="gnb-box">
+        <li><a href="#none">베스트</a></li>
+        <li><a href="#none">신상품</a></li>
+        <li><a href="#none">국내도서</a></li>
+        <li><a href="#none">외국도서</a></li>
+        <li><a href="#none">ebook</a></li>
+        <li><a href="#none">티켓</a></li>
+      </ul>
+      <ul class="search">
+        <li><a href="#"><i class="xi-search"><span>검색</span></i></a></li>
+        <li><a href="#"><i class="xi-user-o"><span>마이페이지</span></i></a></li>
+        <li><a href="#"><i class="xi-cart-o"><span>장바구니</span></i></a></li>
+      </ul>
+    </header>
+  <!-- mobile_header -->
+      <div class="tab-bar mobile">
+      <ul class="tab-bar-list">
+        <li><a href="#none"><i class="xi-bars"><span>메뉴</span></i></a></li>
+        <li><a href="#none"><i class="xi-search"><span>검색</span></i></a></li>
+      <li><a href="#none"><i class="xi-home-o"><span>홈</span></i></a></li>
+      <li><a href="#none"><i class="xi-user-o"><span>마이페이지</span></i></a></li>
+      <li><a href="#none"><i class="xi-clock"><span>최근본페이지</span></i></a></li>
+      <li><a href="#none"><i class="xi-share"><span>공유하기</span></i></a></li>
+
+      </ul>
+    </div>
+    <header id="header" class="mobile">
+      <a href="#main" class="logo">
+        <img src="/assets/images/ok!book-logo.png" alt="okbook">
+      </a>
+      <a href="#none" class="menu"><i class="xi-bars"><span>메뉴</span></i></a>
+      <ul class="gnb">
+        <li><a href="#none"><i class="xi-cart-o"><span>장바구니</span></i></a></li>
+        <li><a href="#none"><i class="xi-user-o"><span>마이페이지</span></i></a></li>
+      </ul>
+    <div class="sub">
+      <a href="#main" class="logo"><img src="./assets/images/ok!book-logo.png" alt="okbook"></a>
+      <ul class="sub_gnb">
+        <li><a href="#none" class="close"><i class="xi-close-min"><span>나가기</span></i></a></li>
+      </ul>
+      <a href="#none" class="login_2"><p>로그인을 해주세요</p></a></a>
+    <ul class="sub_menu_1">
+      <li><a href="#none"><img src="/assets/images/ico_delivery.png" alt="주문배송"><span>주문/배송</span></a></li>
+      <li><a href="#none"><img src="/assets/images/ico_point.png" alt="혜택/포인트"><span>혜택/포인트</span></a></li>
+      <li><a href="#none"><img src="/assets/images/ico_sale.png" alt="세일"><span>세일</span></a></li>
+      <li><a href="#none"><img src="/assets/images/ico_calender.png" alt="출석체크"><span>출석체크</span></a></li>
+    </ul>
+    <ul class="sub_menu_2">
+      <li><a href="#none">베스트</a></li>
+      <li><a href="#none">신상품</a></li>
+      <li><a href="#none">국내도서</a></li>
+      <li><a href="#none">외국도서</a></li>
+      <li><a href="#none">EBOOK</a></li>
+        <li><a href="#none">문구/Gift</a></li>
+      <li><a href="#none">티켓</a></li>
+    </ul>
+    </div>
+    </header>
+    <main id="main">
+      <section class="main-visual pc">
+        <div class="box">
+        <p class="dummy"><img src="/assets/images/banner-1.jpg" alt="dummy"></p>
+        <ul class="main-banner">
+          <li><a href="#none"><img src="/assets/images/banner-1.jpg" alt="이달의 도서"></a></li>
+          <li><a href="#none"><img src="/assets/images/banner-2.jpg" alt="2023미래과학트렌드"></a></li>
+          <li><a href="#none"><img src="/assets/images/banner-3.jpg" alt="스페셜데이"></a></li>
+        </ul>
+        </div>
+        <ul class="indicator">
+        </ul>
+        <p class="control">
+          <a href="#none" class="prev pc"><i class="xi-angle-left"><span>이전</span></i></a>
+          <a href="#none" class="next pc"><i class="xi-angle-right"><span>다음</span></i></a>
+          <a href="#" class="play">
+            <i class="xi-play"><span>타이머 시작</span></i>
+            <i class="xi-pause"><span>타이머 정지</span></i>
+          </a>
+        </p>
+        <span class="bar"></span>
+      </section>
+         <section class="main-visual mobile">
+        <div class="box">
+        <p class="dummy"><img src="/assets/images/main-banner-1.jpg" alt="dummy"></p>
+        <ul class="main-banner">
+          <li><a href="#none"><img src="/assets/images/main-banner-1.jpg" alt="이달의 도서"></a></li>
+          <li><a href="#none"><img src="/assets/images/main-banner-1.jpg" alt="2023미래과학트렌드"></a></li>
+          <li><a href="#none"><img src="/assets/images/main-banner-1.jpg" alt="스페셜데이"></a></li>
+        </ul>
+        </div>
+        <ul class="indicator">
+        </ul>
+        <p class="control">
+          <a href="#none" class="prev pc"><i class="xi-angle-left"><span>이전</span></i></a>
+          <a href="#none" class="next pc"><i class="xi-angle-right"><span>다음</span></i></a>
+          <a href="#" class="play">
+            <i class="xi-play"><span>타이머 시작</span></i>
+            <i class="xi-pause"><span>타이머 정지</span></i>
+          </a>
+        </p>
+        <span class="bar"></span>
+      </section>
+      <section class="concert">
+        <div class="tit pc">
+          <strong>콘서트</strong>
+          <p>지친일상에 에너지를 불러일으켜 줄 피로회복제!</p>
+        </div>
+        <ul class="concert-list">
+          <li>
+            <a href="#none">
+              <img src="/assets/images/concert-1.jpg" alt="멜로망스">
+              <h3>2022.12~2023.2</h3>
+              <span>당신의 마음을 녹이는 감미로운 목소리</span>
+              <p>멜로망스 전국투어 콘서트에서 만나보세요.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#none">
+              <img src="/assets/images/concert-2.jpg" alt="임영웅">
+              <h3>2022.12.20~2022.12.23</h3>
+              <span>한번 들으면 빠져나오지 못하는 감성의 소유자</span>
+              <p>NO.1 임영웅 서울/부산 콘서트에서 만나보세요. </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="recommendation">
+        <h2>&#128217;이달의 추천도서!</h2>
+        <ul class="book">
+          <li>
+            <a href="">
+              <img src="/assets/images/recommendation-1.jpg" alt="수상한 초콜릿가게">
+              <p>평범하지 않은 초콜릿 가게에서의 비밀스러운 이야기</p>
+              <h3>수상한 초콜릿가게</h3>
+              <span>김예은 저</span>
+              <span>2022년10월28일</span>
+              <div class="price">
+                <strong>12,150원</strong>
+                <em>10%</em>
+                <span>13,500원</span>
+              </div>
+              <div class="review">
+                <span>★★★★★</span>
+                <span>리뷰 34</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/assets/images/recommendation-2.jpg" alt="2023미래과학트렌드">
+              <p>"국립과천과학관"에서 시도하는 국내유일대규모 프로젝트</p>
+              <h3>2023미래과학트렌드</h3>
+              <span>국립과천과학관 저</span>
+              <span>2022년11월22일</span>
+              <div class="price">
+                <strong>19,800원</strong>
+                <em>10%</em>
+                <span>18,300원</span>
+              </div>
+              <div class="review">
+                <span>★★★★★</span>
+                <span>리뷰 20</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/assets/images/recommendation-3.jpg" alt="만일 인생을 다시 산다면">
+              <p>당신을 위해 고른 위로의 말
+               </p>
+              <h3>만일 인생을 다시 산다면</h3>
+              <span>김혜남 저</span>
+              <span>2022년11월11일</span>
+              <div class="price">
+                <strong>15,140원</strong>
+                <em>10%</em>
+                <span>13,980원</span>
+              </div>
+              <div class="review">
+                <span>★★★★★</span>
+                <span>리뷰 14</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/assets/images/recommendation-4.jpg" alt="">
+              <p>힘들게 살아낸 오늘을 위로하는 편의점의 밤</p>
+              <h3>불편한 편의점(벚꽃에디션)</h3>
+              <span>김호연 저</span>
+              <span>2021년04월20일</span>
+              <div class="price">
+                <strong>12,600원</strong>
+                <em>10%</em>
+                <span>11,100원</span>
+              </div>
+              <div class="review">
+                <span>★★★★★</span>
+                <span>리뷰 34</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="bg"
+        ></div>
+      </section>
+      <section class="new-book">
+        <h2>도서 종합 <em>신간</em></h2>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="/assets/images/newbook-1.jpg" alt="트렌드코리아2023">
+              <div class="text">
+                <h3>2023년! 멋진 도약을 위해<br /> 무엇을 준비할 것인가?</h3>
+                <span>대한민국 대표 트렌트 도서 트렌트코리아! <br />
+                  2023년 대한민국의 트렌트 분석을 담은 필수도서
+                </span>
+                <div class="price">
+                  <strong>12,150원</strong>
+                  <em>10%</em>
+                  <span>13,1500원</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+        <ul class="indicator"></ul>
+
+      </section>
+      <div class="banner pc">
+        <p>책 한권을 구매 해도 365일 무료배송!</p>
+      </div>
+      <section class="best-seller">
+        <h2>베스트 셀러</h2>
+        <ul class="tab-menu">
+          <li>
+            <a href="#none" class="tab" data-tab="tab-1">국내도서</a>
+            <ul class="best-book open">
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-1.jpg" alt="">
+                  <div class="desc">
+                    <p>서울대 소비트렌드분석센터의 2023 전망</p>
+                    <h3>2023트렌드코리아</h3>
+                    <span>김난도 저</span>
+                    <span>2022년10월5일</span>
+                    <div class="price">
+                      <strong>19,100원</strong>
+                      <em>10%</em>
+                      <span>17,100원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 60</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-2.jpg" alt="">
+                  <div class="desc">
+                    <p>돈·시간·운명으로부터 완전한 자유를 얻는 7단계 인생 공략집</p>
+                    <h3>역행자</h3>
+                    <span>자청 저</span>
+                    <span>2022년05월23일</span>
+                    <div class="price">
+                      <strong>15,750원</strong>
+                      <em>10%</em>
+                      <span>14,250원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 44</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-3.jpg" alt="">
+                  <div class="desc">
+                    <p>물류대란,세계경제의 힘을 바꾸다</p>
+                    <h3>물류가 온다</h3>
+                    <span>박철홍 저 </span>
+                    <span>2022년11월25일</span>
+                    <div class="price">
+                      <strong>16,200원</strong>
+                      <em>10%</em>
+                      <span>14,700원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 25</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-4.jpg" alt="">
+                  <div class="desc">
+                    <p>인생의 두번째 기회를 드립니다.</p>
+                    <h3>다윈 지능</h3>
+                    <span>최재전 저</span>
+                    <span>2022년11월04일</span>
+                    <div class="price">
+                      <strong>17,100원</strong>
+                      <em>10%</em>
+                      <span>15,000원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 34</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="tab" data-tab="tab-2">외국도서</a>
+            <ul class="best-book">
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-5.jpg" alt="Writing Framework">
+                  <div class="desc">
+                    <p>쉽고 체계적인 Writing Step을 통해 기초 문장쓰기 학습</p>
+                    <h3>Writing Framework(Essay)2</h3>
+                    <span>Matthew Broadhurst</span>
+                    <span>2020년10월1일</span>
+                    <div class="price">
+                      <strong>13,000원</strong>
+                      <em>10%</em>
+                      <span>11,700원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 20</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-6.jpg" alt="Wonder">
+                 <div class="desc">
+                    <p>넷플릭스의 뮤지컬 마틸다 원작소설</p>
+                    <h3>Matilda </h3>
+                    <span>로얄드 달 저</span>
+                    <span>2000년</span>
+                    <div class="price">
+                      <strong>9,900원</strong>
+                      <em>10%</em>
+                      <span>5,900원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 44</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-7.jpg" alt="">
+                  <div class="desc">
+                    <p>초등영어학습서1위!</p>
+                    <h3> Smart Phonics1 :Student Book</h3>
+                    <span>편집부 </span>
+                    <span>2010년12월01일</span>
+                    <div class="price">
+                      <strong>14,000원</strong>
+                      <em>10%</em>
+                      <span>12,600원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 15</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-8.jpg" alt="">
+                  <div class="desc">
+                    <p>효과적인 패시지 독해를 위한 리딩 기본서</p>
+                    <h3>Bricks Reading 150 1</h3>
+                    <span>Bricks 저</span>
+                    <span>2013년10월04일</span>
+                    <div class="price">
+                      <strong>15,000원</strong>
+                      <em>10%</em>
+                      <span>13,500원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 74</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="tab" data-tab="tab-3">ebook</a>
+            <ul class="best-book">
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-9.jpg" alt="">
+                  <div class="desc">
+                    <p>동일주제로 스피킹을 원한다면!</p>
+                           <h3>입이 트이는 영어 2023년 1월호</h3>
+                    <span>이현석 저</span>
+                    <span>2022년12월15일</span>
+                    <div class="price">
+                      <strong>8,800원</strong>
+                      <span>8,800원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 60</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-1.jpg" alt="">
+                   <div class="desc">
+                    <p>서울대 소비트렌드분석센터의 2023 전망</p>
+                    <h3>2023트렌드코리아</h3>
+                    <span>김난도 저</span>
+                    <span>2022년10월5일</span>
+                    <div class="price">
+                      <strong>13,300원</strong>
+                      <span>13,300원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 60</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-11.jpg" alt="">
+                  <div class="desc">
+                   <p>당신을 위해 고른 위로의 말
+               </p>
+              <h3>만일 인생을 다시 산다면</h3>
+              <span>김혜남 저</span>
+              <span>2022년11월11일</span>
+              <div class="price">
+                <strong>12,000원</strong>
+                <span>12,000원</span>
+              </div>
+              <div class="review">
+                <span>★★★★★</span>
+                <span>리뷰 14</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-12.jpg" alt="">
+                  <div class="desc">
+                    <p>복잡한 세상을 이기는 단순함의 힘</p>
+                    <h3>원씽</h3>
+                    <span>제이 파파산 저</span>
+                    <span>2013년08월21일</span>
+                    <div class="price">
+                      <strong>10,000원</strong>
+                      <em>10%</em>
+                      <span>8,500원</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="tab" data-tab="tab-4">CD/DVD</a>
+            <ul class="best-book">
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-13.jpg" alt="">
+                  <div class="desc">
+                    <h3>뉴진스(NewJeans)- 1st Single<br /> 'OMG' Message Card ver.[6종 SET]</h3>
+                    <span>뉴진스 노래 </span>
+                    <span>2023년01월02일</span>
+                    <div class="price">
+                      <strong>110,400원</strong>
+                      <em>19%</em>
+                      <span>89,400원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 60</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-14.jpg" alt="">
+                   <div class="desc">
+                    <h3>김광석-4집 네번째[LP]</h3>
+                    <span>김광석 노래</span>
+                    <span>2023년11월16일</span>
+                    <div class="price">
+                      <strong>60,400원</strong>
+                      <em>19%</em>
+                      <span>49,000원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 44</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-15.jpg" alt="">
+                  <div class="desc">
+                   <h3>김광석-3집 3번째 노래 모음[LP]</h3>
+                    <span>김광석 노래</span>
+                    <span>2023년11월16일</span>
+                    <div class="price">
+                      <strong>60,400원</strong>
+                      <em>19%</em>
+                      <span>49,000원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 25</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="/assets/images/best-16.jpg" alt="">
+                  <div class="desc">
+                   <h3>포레스텔라 - 3집 더 포레스텔라 <br />[베이비 핑크 컬러 LP]</h3>
+                    <span>포레스텔라 저</span>
+                    <span>2023년01월17일</span>
+                    <div class="price">
+                      <strong>49,380원</strong>
+                      <em>19%</em>
+                      <span>40,000원</span>
+                    </div>
+                    <div class="review">
+                      <span class="grade">★★★★★</span>
+                      <span>리뷰 34</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="deal">
+        <h3 class="">문구/Gift</h3>
+        <div class="content-box">
+          <div class="tit pc">
+            <span class="tag">문구/Gift</span>
+            <h2>HAPPY Chrithmas</h2>
+          </div>
+          <ul class="deal-list">
+            <li>
+              <a href="#none">
+                <img src="/assets/images/gift-1.jpg" alt="">
+                <div class="cont-txt">
+                  <span>산리오와 함께 귀여움충전!</span>
+                  <p>[Sanrio] 무선 충전 패드 </p>
+                  <div class="price">
+                    <strong>24,150원</strong>
+                    <em>30%</em>
+                    <span>16,905원</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="/assets/images/gift-2.jpg" alt="">
+                <div class="cont-txt">
+                  <span>영롱하게 크리스마스 분위기를 즐겨보세요</span>
+                  <p>크리스마스 트리 조명</p>
+                  <div class="price">
+                    <strong>35,900원</strong>
+                    <em>20%</em>
+                    <span>21,1540원</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+                   <li>
+              <a href="#none">
+                <img src="/assets/images/gift-4.jpg" alt="">
+                <div class="cont-txt">
+                  <span>댕댕이와 따듯한겨울 보내기!</span>
+                  <p>패딩</p>
+                  <div class="price">
+                    <strong>50,450원</strong>
+                    <em>20%</em>
+                    <span>40,360원</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      <section class="best-audio">
+        <h2>베스트 오디오북</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <em class="rank">1</em>
+              <img src="/assets/images/audio-1.jpg" alt="">
+              <span>부를 창조하는 생각의 뿌리</span>
+              <h3>웰씽킹</h3>
+              <div class="price">
+                <strong>16,000원</strong>
+                <em>10%</em>
+                <span>14,400원</span>
+              </div>
+              <div class="review">
+                <span>★★★★★</span>
+                <span>리뷰 24</span>
+              </div>
+
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em class="rank">2</em>
+              <img src="/assets/images/audio-2.jpg" alt="">
+              <span>
+                무라카미 하루키를 만나기 위해 가장 먼저 읽어야 할 책!</span>
+              <h3>노르웨이 숲</h3>
+              <div class="price">
+                <strong>15,100원</strong>
+                <em>10%</em>
+                <span>13,500원</span>
+              </div>
+              <div class="review">
+                <span class="grade">★★★★★</span>
+                <span>리뷰 36</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em class="rank">3</em>
+              <img src="/assets/images/audio-3.jpg" alt="">
+              <span>인문학에 대해 폭넓고 자유롭게!</span>
+              <h3>인문의 눈으로 세상을 보다</h3>
+              <div class="price">
+                <strong>12,150원</strong>
+                <em>10%</em>
+                <span>13,500원</span>
+              </div>
+              <div class="review">
+                <span class="grade">★★★★★</span>
+                <span>리뷰 34</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em class="rank">4</em>
+              <img src="/assets/images/audio-4.jpg" alt="">
+              <span>평범하지 않은 크리스마스를 맞이하고 싶다면</span>
+              <h3>2023 콘텐츠가 전부다</h3>
+              <div class="price">
+                <strong>9,900원</strong>
+                <em>20%</em>
+                <span>7,920원</span>
+              </div>
+              <div class="review">
+                <span class="grade">★★★★★</span>
+                <span>리뷰 25</span>
+              </div>
+
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+   <footer id="footer">
+      <a href="/index.html" class="logo"><img src="/assets/images/footer-logo.png" alt="okbook"></a>
+      <ul class="footer-menu">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용안내</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <address>
+        <ul class="address">
+          <li><a href="#none">소재지:인천시 서구</a></li>
+          <li><a href="#none">대표:이지연</a></li>
+          <li><a href="#none">사업자 등록번호:098-9876-77777</a></li>
+          <li><a href="#none">대표번호:010-7654-0908</a></li>
+          <li><a href="#none">Copyright ⓒ okbook Corp. All Rights Reserved.</a></li>
+        </ul>
+      </address>
+      <div class="sns">
+        <ul class="sns-list">
+          <li><a href="">
+              <i class="xi-kakaotalk"><span>카카오톡</span>
+              </i>
+            </a>
+          </li>
+          <li><a href="">
+               <i class="xi-facebook"><span>페이스북</span>
+              </i>
+            </a>
+          </li>
+          <li><a href="">
+              <i class="xi-instagram"><span>인스타그램</span>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cel">
+        <span>고객센터:<em>010-7654-0908</em></span>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="/assets/js/all.js"></script>
+
+</html>
