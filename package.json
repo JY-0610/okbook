@@ -9,7 +9,7 @@
     "build": "gulp build",
     "deploy": "gulp deploy"
   },
-  "homepage": " https://jy-0610.github.io/okbook",
+  "homepage": " https://jy-0610.github.io/okbook/",
   "author": "",
   "license": "ISC",
   "devDependencies": {
