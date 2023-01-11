@@ -8,6 +8,7 @@ const gulp                      = require('gulp'),
       rename                    = require('gulp-rename'), 
       browserSync               = require('browser-sync').create(); 
       deploy                    = require('gulp-gh-pages');
+      ghPages                   =require("gulp-gh-pages-with-updated-gift");
 
 var SRC_FOLDER = './src';
 var DIST_FOLDER = './dist';
