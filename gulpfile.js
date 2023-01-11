@@ -8,7 +8,6 @@ const gulp                      = require('gulp'),
       rename                    = require('gulp-rename'), 
       browserSync               = require('browser-sync').create(); 
       deploy                    = require('gulp-gh-pages');
-      serverStatic              =require('serve-static');
 
 var SRC_FOLDER = './src';
 var DIST_FOLDER = './dist';
@@ -121,11 +120,3 @@ gulp.task('deploy', function () {
       .pipe(deploy())
   });
 
-gulp.task('webserver', function() {
-    gulp.src(htmlFolder)
-    .pipe(serverStatic({
-        livereload: true,
-        open: true,
-        middleware: [serveStatic(__dirname + '/builds')]
-    }));
-});
